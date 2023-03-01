@@ -1,0 +1,557 @@
+.ul {
+    list-style: none;
+}
+
+.lileft {
+    li {
+        float: left;
+    }
+}
+
+.bold {
+    font-weight: 700;
+    @include ie_noto(800);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text_line {
+    text-decoration: underline;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_right {
+    text-align: right;
+}
+
+@media #{$col-mb} {
+    .align-center-mb {
+        text-align: center;
+    }
+
+    .align-left-mb {
+        text-align: left;
+    }
+
+    .align-right-mb {
+        text-align: right;
+    }
+}
+
+@media #{$col-pad} {
+    .align-center-pad {
+        text-align: center;
+    }
+
+    .align-left-pad {
+        text-align: left;
+    }
+
+    .align-right-pad {
+        text-align: right;
+    }
+}
+
+@media #{$col-pads} {
+    .align-center-pads {
+        text-align: center;
+    }
+
+    .align-left-pads {
+        text-align: left;
+    }
+
+    .align-right-pads {
+        text-align: right;
+    }
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.col-1 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 1);
+}
+
+.col-2 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 2);
+}
+
+.col-3 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 3);
+}
+
+.col-4 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 4);
+}
+
+.col-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 5);
+}
+
+.col-6 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 6);
+}
+
+.col-7 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 7);
+}
+
+.col-8 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 8);
+}
+
+.col-9 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 9);
+}
+
+.col-10 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 10);
+}
+
+.col-11 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 11);
+}
+
+.col-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: calc($grid / 12 * 12);
+}
+
+@media #{$col-pad} {
+    .row-pad {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .col-pad-1 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 1);
+    }
+
+    .col-pad-2 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 2);
+    }
+
+    .col-pad-3 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 3);
+    }
+
+    .col-pad-4 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 4);
+    }
+
+    .col-pad-5 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 5);
+    }
+
+    .col-pad-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 6);
+    }
+
+    .col-pad-7 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 7);
+    }
+
+    .col-pad-8 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 8);
+    }
+
+    .col-pad-9 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 9);
+    }
+
+    .col-pad-10 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 10);
+    }
+
+    .col-pad-11 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 11);
+    }
+
+    .col-pad-12 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 12);
+    }
+}
+
+@media #{$col-pcxs} {
+    .row-pcxs {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .col-pcxs-1 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 1);
+    }
+
+    .col-pcxs-2 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 2);
+    }
+
+    .col-pcxs-3 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 3);
+    }
+
+    .col-pcxs-4 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 4);
+    }
+
+    .col-pcxs-5 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 5);
+    }
+
+    .col-pcxs-6 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 6);
+    }
+
+    .col-pcxs-7 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 7);
+    }
+
+    .col-pcxs-8 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 8);
+    }
+
+    .col-pcxs-9 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 9);
+    }
+
+    .col-pcxs-10 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 10);
+    }
+
+    .col-pcxs-11 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 11);
+    }
+
+    .col-pcxs-12 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 12);
+    }
+}
+
+@media #{$col-pcs} {
+    .row-pcs {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .col-pcs-1 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 1);
+    }
+
+    .col-pcs-2 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 2);
+    }
+
+    .col-pcs-3 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 3);
+    }
+
+    .col-pcs-4 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 4);
+    }
+
+    .col-pcs-5 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 5);
+    }
+
+    .col-pcs-6 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 6);
+    }
+
+    .col-pcs-7 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 7);
+    }
+
+    .col-pcs-8 {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: calc($grid / 12 * 8);
+    }
+
+    .col-pcs-9 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 9);
+    }
+
+    .col-pcs-10 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 10);
+    }
+
+    .col-pcs-11 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 11);
+    }
+
+    .col-pcs-12 {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: calc($grid / 12 * 12);
+    }
+}
+
+@media #{$col-pcm} {
+    .row-pcm {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .col-pcm-1 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 1);
+    }
+
+    .col-pcm-2 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 2);
+    }
+
+    .col-pcm-3 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 3);
+    }
+    .col-pcm-4 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 4);
+    }
+
+    .col-pcm-5 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 5);
+    }
+
+    .col-pcm-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 6);
+    }
+
+    .col-pcm-7 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 7);
+    }
+
+    .col-pcm-8 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 8);
+    }
+
+    .col-pcm-9 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 9);
+    }
+
+    .col-pcm-10 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 10);
+    }
+
+    .col-pcm-11 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 11);
+    }
+
+    .col-pcm-12 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 12);
+    }
+}
+
+@media #{$col-pcl} {
+    .row-pcl {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .col-pcl-1 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 1);
+    }
+
+    .col-pcl-2 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 2);
+    }
+
+    .col-pcl-3 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 3);
+    }
+
+    .col-pcl-4 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 4);
+    }
+
+    .col-pcl-5 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 5);
+    }
+
+    .col-pcl-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 6);
+    }
+
+    .col-pcl-7 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 7);
+    }
+
+    .col-pcl-8 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 8);
+    }
+
+    .col-pcl-9 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 9);
+    }
+
+    .col-pcl-10 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 10);
+    }
+
+    .col-pcl-11 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 11);
+    }
+
+    .col-pcl-12 {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: calc($grid / 12 * 12);
+    }
+}
+
+.en {
+    font-family: $en;
+}
+
+.main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}

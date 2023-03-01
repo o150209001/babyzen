@@ -1,0 +1,46 @@
+//common
+%table-style{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+%seo{
+    white-space:nowrap;
+    text-indent:100%;
+    overflow:hidden;
+    font:0/0 serif \9;
+    text-shadow:none \9;
+    color:transparent \9;
+}
+%bg-change{
+    -moz-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+    -o-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+    -webkit-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+    transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+    @media #{$col-pcs}{
+        &:hover{
+            -moz-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+            -o-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+            -webkit-transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+            transition: all 0.1s cubic-bezier(.04,.45,.2,.96);
+        }
+    }
+}
+%inline-block{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+%inline-item{
+    font-size: 0;
+    letter-spacing: 0;
+    line-height: 0;
+}
+
+
+
+
+
+
+
+
+

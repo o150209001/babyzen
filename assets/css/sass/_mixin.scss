@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Noto+Sans+TC:wght@400;700&display=swap');
+$body-font-family:'Noto Sans TC','Microsoft JhengHei', sans-serif;
+$en:'Jost', sans-serif;
+
+
+/*content set*/
+$grid: 100%;
+$col-pcxl:"only screen and (min-width: 1800px)"; /*1800 up*/
+$col-pcl:"only screen and (min-width: 1600px)"; /*1600 up*/
+$col-pcm:"only screen and (min-width: 1440px)"; /*1440 up*/
+$col-pcs:"only screen and (min-width: 1280px)"; /*1280 up*/
+$col-pcxs:"only screen and (min-width: 992px)"; /*992 up*/
+$col-pad:"only screen and (min-width: 768px)"; /*768 up*/
+$col-mb:"only screen and (max-width: 767px)";
+$col-pads:"only screen and (max-width: 991px)";
+
+/*img url set*/
+$img-path:"../images/";
+@function img-path($img-path){
+    @return $img-path;
+}
+
+/*css3*/
+@mixin keyframes($name){
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+@mixin transform($transforms){
+    -moz-transform:$transforms;
+    -ms-transform:$transforms;
+    -o-transform:$transforms;
+    -webkit-transform:$transforms;
+    transform:$transforms;
+}
+@mixin scale($scale){
+    @include transform(scale($scale));
+}
+@mixin rotate($rotate){
+    @include transform(rotate($rotate));
+}
+@mixin skew($skew){
+    @include transform(skew($skew));
+}
+@mixin translate($translateX,$translateY){
+    @include transform(translate($translateX,$translateY));
+}
+@mixin transform-origin($origin){
+    -moz-transform-origin:$origin;
+    -ms-transform-origin:$origin;
+    -o-transform-origin:$origin;
+    -webkit-transform-origin:$origin;
+    transform-origin:$origin;
+}
+@mixin transition($transition){
+    transition:$transition;
+    -moz-transition:$transition;
+    -o-transition:$transition;
+    -ms-transition:$transition;
+    -webkit-transition:$transition;
+}
+@mixin bg-change($sec){
+    @include transition(all $sec);
+}
+@mixin alpha($alpha){
+    opacity: $alpha;
+    $alpha-ie: $alpha * 100;
+    filter: alpha(opacity=$alpha-ie); //IE8
+    -moz-opacity:$alpha;
+    -khtml-opacity: $alpha;
+}
+@mixin ellipsis($height,$line_clamp) {
+    height: $height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line_clamp;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-line-clamp: $line_clamp;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    line-clamp: $line_clamp;
+    box-orient: vertical;
+}
+@mixin scroll-x{
+    overflow-y: auto;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+}
+@mixin scroll-item{
+    display: inline-block;
+    white-space: nowrap;
+}
+@mixin ie-noto($fz:600){
+    @media (-ms-high-contrast: active), (-ms-high-contrast: none){
+        font-weight: $fz;
+    }
+}
+@mixin inline-item{
+    font-size: 0;
+    letter-spacing: 0;
+    line-height: 0;
+}
