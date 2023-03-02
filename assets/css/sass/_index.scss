@@ -130,7 +130,7 @@
 
     &.do {
         .showbox {
-            animation: scale-s 5s forwards ease-in-out;
+            animation: scale-s 1s forwards ease-in-out;
         }
     }
 
@@ -590,7 +590,7 @@
 
     &.do {
         .part6-pic-group {
-            animation: scale-s 5s forwards ease-in-out;
+            animation: scale-s 1s forwards ease-in-out;
         }
     }
 
@@ -827,7 +827,7 @@
         }
 
         .right-part {
-            animation: move-up 0.5s forwards ease-in-out;
+            animation: move-up 0.5s 0.3s forwards ease-in-out;
         }
     }
 
@@ -1017,7 +1017,7 @@
         }
 
         .right-part {
-            animation: move-up 0.5s forwards ease-in-out;
+            animation: move-up 0.5s 0.3s forwards ease-in-out;
         }
     }
 
@@ -1219,7 +1219,7 @@
         }
 
         .right-part {
-            animation: move-up 0.5s forwards ease-in-out;
+            animation: move-up 0.5s 0.3s forwards ease-in-out;
         }
     }
 
