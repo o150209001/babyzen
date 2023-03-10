@@ -21,14 +21,7 @@ $(function () {
             $('#rd-section-2').addClass('do')
         }
     });
-    ScrollTrigger.create({
-        trigger: '#rd-section-video-1',
-        start: "top top+=50%",
-        markers:false,
-        onEnter: function () {
-            $('#rd-video-1')[0].play()
-        }
-    });
+
     ScrollTrigger.create({
         trigger: '#rd-section-video-2',
         start: "top top+=50%",
